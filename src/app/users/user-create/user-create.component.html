@@ -1,0 +1,15 @@
+<div class="book-create-container box-shadow">
+
+  <!--Use this to store each attribute into the body of the package -->
+  <label class="label">Username</label>
+  <input [(ngModel)]="user.username" class="form-input" type="text" required>
+
+  <label class="label">First Name</label>
+  <input [(ngModel)]="user.firstname" class="form-input" type="text" required>
+  
+  <label class="label">Last Name</label>
+  <input [(ngModel)]="user.lastname" class="form-input" type="text" required>
+  
+  <!--inject the functionality for "create user book"-->
+  <button (click)="createUser(user)" class="btn pull-right">Create User</button>
+</div>

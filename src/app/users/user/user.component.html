@@ -1,0 +1,18 @@
+
+<!--Conditional statement to capture one user-->
+<div *ngIf="user" class="user-create-container box-shadow">
+  <label class="label">ID</label>
+
+
+  <!--How to display each attribute onto the web page-->
+  <input [(ngModel)]="user._id" class="form-input" type="text">
+  <label  class="label">Username</label>
+  <input [(ngModel)]="user.username" class="form-input" type="text">
+  <label class="label">First Name</label>
+  <input [(ngModel)]="user.firstname"class="form-input" type="text">
+  <label class="label">Last Name</label>
+  <input [(ngModel)]="user.lastname"class="form-input" type="text">
+
+  <!--Calls and use the function in component.ts file-->
+   <button (click)="updateUser(user._id, user)" class="btn pull-right">Update User</button>
+</div>

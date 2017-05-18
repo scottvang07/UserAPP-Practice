@@ -1,0 +1,15 @@
+<div class="book-create-container box-shadow">
+  <label class="label">Title</label>
+
+  <!--Use this to store each attribute into the body of the package -->
+  <input [(ngModel)]="book.title" class="form-input" type="text" required>
+  <label class="label">Genre</label>
+  <input [(ngModel)]="book.genre" class="form-input" type="text" required>
+  <label class="label">Author</label>
+  <input [(ngModel)]="book.author" class="form-input" type="text" required>
+  <label class="label">Cover image Url</label>
+  <input [(ngModel)]="book.image_url"class="form-input" type="text" required>
+
+  <!--inject the functionality for "create new book"-->
+  <button (click)="createBook(book)" class="btn pull-right">Create Book</button>
+</div>
